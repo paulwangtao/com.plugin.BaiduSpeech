@@ -1,8 +1,9 @@
 //
+//  BaiduAudio.h
+//  
 //
-//AppDelegate+BaiduAudio.h
-//
-//
+//  Created by paul Wang on 15-08-27.
+//  mail to wangtaovipone@sina.com
 
 #import <Foundation/Foundation.h>
 

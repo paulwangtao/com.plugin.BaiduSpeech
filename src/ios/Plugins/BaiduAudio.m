@@ -1,5 +1,5 @@
 //
-//  AppDelegate_BaiduAudio.m
+//  BaiduAudio.m
 //  
 //
 //  Created by paul Wang on 15-08-27.
