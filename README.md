@@ -2,7 +2,9 @@ BaiduAudio
 
 mailTo: wangtaovipone@sina.com
 
-1.基于:Cordova 集成 百度语音
+功能:将文字转换成声音
+
+1.基于:Cordova 集成 百度语音 
 
 百度语音的下载地址是：http://yuyin.baidu.com/pz.html
 
