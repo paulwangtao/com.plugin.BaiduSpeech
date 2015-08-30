@@ -15,12 +15,14 @@ Capablities — in AppAudio 打开
 ionic plugin add /Users/wangtao/Developer/Cordova-plugin-Audio/cordova.plugins.BaiduSpeech 
 
 4.修改BaiduAudioConfig.plist 的三个属性，这个是在百度语音申请的ID，也可以参照百度混音的api
+————————————————————
 App ID: x
 API Key: x
 Secret Key: x
 
 
 5.调用
+//初始化
 cordova.plugins.BaiduSpeech.init({person:"female"});
-
+//发出声音
 cordova.plugins.BaiduSpeech.speech(msg.value);
