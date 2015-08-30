@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--id插件的标识-->
+<plugin id="com.tjgl.plugin.BaiduSpeech" version="0.0.1" 
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+	<!--name：插件的名称-->
+    <name>BaiduSpeech</name>
+	<!--description：描述信息-->
+    <description>百度语音插件</description>
+	<!-- 要求版本-->
+	<engines>
+        <engine name="cordova" version=">=3.0"/>
+    </engines>
+	<!--js-module：对应我们的 javascript 文件，src 属性指向 www/ExtraInfo.js-->
+    <js-module name="BaiduSpeech" src="www/BaiduSpeech.js">
+        <clobbers target="cordova.plugins.BaiduSpeech"/><!--注册目标 实际调用时cordova.plugins.ExtraInfo-->
+    </js-module>
+	<!--platform：支持的平台-->
+    
+
+     <platform name="ios">
+            <config-file target="config.xml" parent="/*">
+                <feature name="BaiduSpeech">
+                    <param name="ios-package" value="BaiduAudio"/>
+                </feature>
+            </config-file>
+	    <header-file src="src/ios/Plugins/BaiduAudio.h" /> 
+            <source-file src="src/ios/Plugins/BaiduAudio.m" />
+
+            <source-file src="src/ios/lib/libbdtts.a" framework="true" />
+            <header-file src="src/ios/lib/BDTTSSynthesizer.h"/>
+            <header-file src="src/ios/lib/BDTTSSynthesizerDefine.h"/>
+            <header-file src="src/ios/lib/BDTTSSynthesizerDelegate.h"/>
+           
+	    <resource-file src="src/ios/BaiduAudioConfig.plist" />
+            <resource-file src="src/ios/bd_etts_speech_female.dat" />
+			<resource-file src="src/ios/bd_etts_text.dat" />
+            <resource-file src="src/ios/bdtts_temp_license.dat" />
+
+            <framework src="CoreData.framework" weak="true" />
+            <framework src="AudioToolbox.framework" weak="true" />
+            <framework src="SystemConfiguration.framework" weak="true" />
+            <framework src="AVFoundation.framework" weak="true" />
+
+            <framework src="libstdc++.6.0.9.tbd" weak="true" />
+            
+        </platform>
+</plugin>
