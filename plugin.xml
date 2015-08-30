@@ -7,6 +7,10 @@
     <name>BaiduSpeech</name>
 	<!--description：描述信息-->
     <description>百度语音插件</description>
+    <description>Cordova Audio Plugin</description>
+        <license>Apache 2.0</license>
+        <keywords>cordova,audio</keywords>
+
 	<!-- 要求版本-->
 	<engines>
         <engine name="cordova" version=">=3.0"/>
